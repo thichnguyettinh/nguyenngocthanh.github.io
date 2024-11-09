@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>BTVN BUOI 5</title>
+        <style>
+            .mytextbox{
+                color: #99FF33;
+                background-color: #006633;
+                border: 1px solid #996633;
+                width: 300px;
+            }
+            #forml table{
+                border: 5px groove#993366;
+                background-color: #FFDDDD;
+                color: #003366;
+            }
+            #forml table td{
+                border: 1px solid #CC9999;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="XuLyDangKy.php" enctype="multipart/form-data" method="post" id="forml">
+        <table cellpadding="4" border="1" width="500" cellspacing="0" style="margin: 0px auto;">
+            <caption>ĐĂNG KÝ THÀNH VIÊN CLB YÊU NHẠC</caption>
+            <tr>
+                <th>Họ tên</th>
+                <th>
+                    <input name="txtHoTen" placeholder="Họ tên" type="text" class="mytextbox"/>
+                </th>
+            </tr>
+            <tr>
+                <th>Tên đăng nhập</th>
+                <th>
+                    <input name="txtUserName" placeholder="Username" type="text" class="mytextbox"/>
+                </th>
+            </tr>
+            <tr>
+                <th>Mật khẩu</th>
+                <th>
+                    <input name="txtPass" placeholder="Mật khẩu" type="password" class="mytextbox"/>
+                </th>
+            </tr>
+            <tr>
+                <th>Gõ lại mật khẩu</th>
+                <th>
+                    <input name="txtRepass" placeholder="Gõ lại mật khẩu" type="password" class="mytextbox"/>
+                </th>
+            </tr>
+            <tr>
+                <th>Giới tính</th>
+                <th>
+                    <input type="radio" checked name="rdGioiTinh" value="0"/>Nam
+                    <input type="radio" name="rdGioiTinh" value="1"/>Nữ
+                </th>
+            </tr>
+            <tr>
+                <th>Ngoại ngữ</th>
+                <th>
+                    <input type="checkbox" name="chkAnh" value="Anh">Anh văn
+                    <input type="checkbox" name="chkPhap" value="Pháp">Pháp văn
+                    <input type="checkbox" name="chkHoa" value="Hoa">Hoa văn
+                </th>
+            </tr>
+            <tr>
+                <th>Nghề nghiệp</th>
+                <th>
+                    <select name="cboNgheNghiep" class="mytextbox">
+                        <option value="0">Bạn làm nghề gì</option>
+                        <option value="1">Học sinh - Sinh viên</option>
+                        <option value="2">Giáo viên</option>
+                        <option value="3">Nhân viên</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>Hình</th>
+                <th>
+                    <input type="file" name="fHinh"  class="mytextbox"/>
+                </th>
+            </tr>
+            <tr>
+                <th>Sở thích</th>
+                <th>
+                    <textarea name="txtSothich" id="txtSothich" row="5"  class="mytextbox"></textarea>
+                </th>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
